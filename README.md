@@ -2,7 +2,7 @@
 
 This is the repository that contains source code for the [Intrinsic-LoRA website](https://intrinsic-lora.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find this paper useful for your work please cite:
 ```
 @article{du2023generative,
   author    = {Du, Xiaodan and Kolkin, Nicholas and Shakhnarovich, Greg and Bhattad, Anand},
