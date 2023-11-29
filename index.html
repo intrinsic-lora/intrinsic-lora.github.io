@@ -24,24 +24,52 @@
     .centered-table tfoot td {
         border-top: 2px solid black;
     }
+    .centered-table caption {
+      text-align: justify;
+    }
+    .centered-line {
+      display: block;
+      text-align: center;
+    }
     .image-table {
     width: 100%;
   }
-  .image-table img {
+  /* .image-table img {
     width: 100%;
-    max-width: 100px; /* adjust as needed */
+    max-width: 100px; 
   }
+  */
   .image-table th, .image-table td {
     text-align: center;
   }
   .caption {
-    text-align: center;
+    text-align: justify;
     margin-top: 10px;
+  }
+  /* Add the media queries here */
+  @media only screen and (max-width: 768px) {
+    .image-table img {
+      max-width: 50px; /* smaller max-width for mobile devices */
+    }
+    .image-table td {
+    font-size: 8px; /* Smaller font size for small screens */
+    }
+    .image-table th {
+    font-size: 10px; /* Smaller font size for small screens */
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .image-table img {
+      max-width: 100px; /* larger max-width for larger screens */
+    }
+  }
+
 </style>
   <meta charset="utf-8">
   <meta name="description"
         content="Generative Models capture intrinsic image representations and we show how to extract them using a unified approach that works for any generative model including autoregressive, gan and difussion.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="keywords" content="Generative Models, Diffusion Models, GANs, Autoregressive Models, LoRA">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Generative Models: What do they know?</title>
 
@@ -251,7 +279,10 @@
     <table class="centered-table">
 
       <caption>
-          Summary of scene intrinsic extraction capabilities across different generative models without changing generator head. <span style="color: green;">✓</span>: Intrinsics can be extracted with high quality. <span style="color: orange;">~</span>: Intrinsics can be extracted with medium quality. <span style="color: red;">✗</span>: Intrinsics cannot be extracted.
+          Summary of scene intrinsic extraction capabilities across different generative models without changing generator head. <br>
+          <span class="centered-line"><span style="color: green;">✓</span>: Intrinsics can be extracted with high quality.</span> 
+          <span class="centered-line"><span style="color: orange;">~</span>: Intrinsics can be extracted with medium quality.</span>
+          <span class="centered-line"><span style="color: red;">✗</span>: Intrinsics cannot be extracted.</span>
       </caption>
       <thead>
       <tr>
