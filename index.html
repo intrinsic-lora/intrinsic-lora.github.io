@@ -47,21 +47,21 @@
     margin-top: 10px;
   }
   /* Add the media queries here */
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 800px) {
     .image-table img {
-      max-width: 45px; /* smaller max-width for mobile devices */
+      max-width: 37px; /* smaller max-width for mobile devices */
     }
     .image-table td {
     font-size: 8px; /* Smaller font size for small screens */
     }
     .image-table th {
-    font-size: 10px; /* Smaller font size for small screens */
+    font-size: 8px; /* Smaller font size for small screens */
     }
     .centered-table td {
     font-size: 8px; /* Smaller font size for small screens */
     }
     .centered-table th {
-    font-size: 10px; /* Smaller font size for small screens */
+    font-size: 8px; /* Smaller font size for small screens */
     }
     .centered-table caption {
       font-size: 10px;
@@ -74,7 +74,7 @@
     }
   }
 
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 801px) {
     .image-table img {
       max-width: 100px; /* larger max-width for larger screens */
     }
@@ -296,7 +296,7 @@
       <caption>
           Summary of scene intrinsic extraction capabilities across different generative models without changing generator head. <br>
           <span class="centered-line"><span style="color: green;">✓</span>: Intrinsics can be extracted with high quality.</span> 
-          <span class="centered-line"><span style="color: orange;">~</span>: Intrinsics can be extracted with medium quality.</span>
+          <span class="centered-line"><span style="color: orange;">～</span>: Intrinsics can be extracted with medium quality.</span>
           <span class="centered-line"><span style="color: red;">✗</span>: Intrinsics cannot be extracted.</span>
       </caption>
       <thead>
@@ -316,8 +316,8 @@
           <td>VQGAN</td>
           <td>Autoregressive</td>
           <td>FFHQ</td>
-          <td style="color: orange;">~</td>
-          <td style="color: orange;">~</td>
+          <td style="color: orange;">～</td>
+          <td style="color: orange;">～</td>
           <td style="color: green;">✓</td>
           <td style="color: green;">✓</td>
       </tr>
@@ -326,7 +326,7 @@
           <td>GAN</td>
           <td>FFHQ</td>
           <td style="color: green;">✓</td>
-          <td style="color: orange;">~</td>
+          <td style="color: orange;">～</td>
           <td style="color: green;">✓</td>
           <td style="color: green;">✓</td>
       </tr>
@@ -344,7 +344,7 @@
           <td>GAN</td>
           <td>FFHQ</td>
           <td style="color: green;">✓</td>
-          <td style="color: orange;">~</td>
+          <td style="color: orange;">～</td>
           <td style="color: green;">✓</td>
           <td style="color: green;">✓</td>
       </tr>
